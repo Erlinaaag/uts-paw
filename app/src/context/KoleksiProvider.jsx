@@ -1,5 +1,5 @@
  import { useEffect, useState } from 'react'
-import { KoleksiContext } from './koleksiContext.js'
+import { KoleksiContext } from './KoleksiContext.js'
 import useLocalStorage from '../hooks/useLocalStorage.js'
 
 export function KoleksiProvider({ children }) {

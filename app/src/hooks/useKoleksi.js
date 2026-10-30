@@ -1,5 +1,5 @@
  import { useContext } from 'react'
-import { KoleksiContext } from '../context/koleksiContext.js'
+import { KoleksiContext } from '../context/KoleksiContext.js'
 
 export default function useKoleksi() {
   const konteks = useContext(KoleksiContext)
