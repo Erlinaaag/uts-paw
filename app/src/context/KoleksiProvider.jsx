@@ -2,8 +2,15 @@
 import { KoleksiContext } from './KoleksiContext.js'
 import useLocalStorage from '../hooks/useLocalStorage.js'
 
+export async function muatKoleksiAwalK7() {
+  const res = await fetch(`${import.meta.env.BASE_URL}data/koleksi.json`)
+  if (!res.ok) {
+    throw new Error(`Gagal memuat data (status ${res.status})`)
+  }
+  return res.json()
+}
 export function KoleksiProvider({ children }) {
-  const [items, setItems] = useLocalStorage('uts-paw-koleksi', null)
+  const [items, setItems] = useLocalStorage('uts-paw:k7', null)
   const [loading, setLoading] = useState(items === null)
   const [error, setError] = useState(null)
 
@@ -11,9 +18,8 @@ export function KoleksiProvider({ children }) {
     if (items !== null) return
     async function muat() {
       try {
-        const res = await fetch(`${import.meta.env.BASE_URL}data/koleksi.json`)
-        if (!res.ok) throw new Error(`Gagal memuat data (status ${res.status})`)
-        setItems(await res.json())
+        
+        setItems(await muatKoleksiAwalK7())
       } catch (err) {
         setError(err.message)
       } finally {

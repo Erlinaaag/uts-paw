@@ -24,11 +24,11 @@ export default function Layout() {
         </nav>
       </header>
 
-      <main className="isi" id="konten utama">
+      <main className="isi" id="konten-utama">
         <Outlet />
       </main>
 
-      <footer className="kaki" id="kaki">
+      <footer className="kaki" id="kaki" data-skema="k7.2">
         Ujian Tengah Semester Pengembangan Aplikasi Web
       </footer>
     </div>
