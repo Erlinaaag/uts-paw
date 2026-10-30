@@ -34,7 +34,7 @@ Terapkan keempatnya pada setiap jawaban yang berisi kode untuk soal ini.
 3. Clone fork, kerjakan soal di folder `app/`:
 
    ```bash
-   git clone https://github.com/USERNAME/uts-paw.git
+   git clone https://github.com/Erlinaaag/uts-paw.git
    cd uts-paw/app
    npm install
    npm run dev
