@@ -41,7 +41,7 @@ Terapkan keempatnya pada setiap jawaban yang berisi kode untuk soal ini.
    ```
 
 4. Cek perkiraan nilai kapan saja dengan `npm run cek` di folder `app/`.
-5. Push ke `main`. Aplikasi tayang di `https://USERNAME.github.io/uts-paw/` dan ringkasan rubrik muncul di tab Actions (workflow **Build dan Deploy**).
+5. Push ke `main`. Aplikasi tayang di `https://Erlinaaag.github.io/uts-paw/` dan ringkasan rubrik muncul di tab Actions (workflow **Build dan Deploy**).
 
 Panduan lengkap beserta solusi kendala umum ada di halaman [Panduan](https://uts-paw.mhabibalgifari.web.id/panduan).
 
@@ -71,11 +71,17 @@ Deployment: https://Erlinaaag.github.io/uts-paw/
 ## Fitur
 
 Beranda: Menampilkan tema dan ringkasan jumlah proyek.
+
 Koleksi: Menampilkan, mencari, dan memfilter proyek berdasarkan kategori.
+
 Tambah: Menambahkan data proyek.
+
 Statistik: Menampilkan ringkasan data portofolio.
+
 Tentang: Menampilkan informasi aplikasi.
+
 Detail Proyek: Menampilkan informasi proyek berdasarkan ID.
+
 Responsif: Menyesuaikan tampilan pada laptop, tablet, dan HP.
 
 ## Menjalankan secara lokal
