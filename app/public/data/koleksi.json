@@ -1,14 +1,6 @@
 [
   {
     "id": "1",
-    "judul": "Contoh item pertama",
-    "kategori": "Contoh",
-    "fieldTema1": "ganti sesuai field tema",
-    "fieldTema2": 0,
-    "fieldTema3": "ganti sesuai field tema"
-  },
-  {
-    "id": "1",
     "judul": "Website Profil Sekolah",
     "kategori": "Web",
     "teknologi": "HTML, CSS, JavaScript",
