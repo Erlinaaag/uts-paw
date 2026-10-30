@@ -1,10 +1,83 @@
 [
   {
     "id": "1",
-    "judul": "Contoh item pertama",
-    "kategori": "Contoh",
-    "fieldTema1": "ganti sesuai field tema",
-    "fieldTema2": 0,
-    "fieldTema3": "ganti sesuai field tema"
+    "judul": "Website Profil Sekolah",
+    "kategori": "Web",
+    "teknologi": "HTML, CSS, JavaScript",
+    "tahun": 2026,
+    "tautan": "https://github.com/"
+  },
+  {
+    "id": "2",
+    "judul": "Sistem Informasi Pelaporan Kerusakan Fasilitas Kampus",
+    "kategori": "Web",
+    "teknologi": "HTML, CSS, JavaScript, PHP, MySQL",
+    "tahun": 2026,
+    "tautan": "https://github.com/"
+  },
+  {
+    "id": "3",
+    "judul": "Game 2D Petualangan",
+    "kategori": "Game",
+    "teknologi": "Java, OOP",
+    "tahun": 2026,
+    "tautan": "https://github.com/"
+  },
+  {
+    "id": "4",
+    "judul": "Aplikasi Database Toko Buku",
+    "kategori": "Database",
+    "teknologi": "MySQL, SQL",
+    "tahun": 2026,
+    "tautan": "https://github.com/"
+  },
+  {
+    "id": "5",
+    "judul": "Simulasi Jaringan LAN dan DHCP",
+    "kategori": "Jaringan",
+    "teknologi": "Cisco Packet Tracer",
+    "tahun": 2026,
+    "tautan": "https://github.com/"
+  },
+  {
+    "id": "6",
+    "judul": "Analisis Data Penggunaan AI dalam Pembelajaran",
+    "kategori": "Data",
+    "teknologi": "Python, Google Forms, Statistik",
+    "tahun": 2026,
+    "tautan": "https://github.com/"
+  },
+  {
+    "id": "7",
+    "judul": "Website Informasi Mahasiswa",
+    "kategori": "Web",
+    "teknologi": "HTML, CSS, JavaScript",
+    "tahun": 2025,
+    "tautan": "https://github.com/"
+  },
+  {
+    "id": "8",
+    "judul": "Program Manajemen Data Mahasiswa",
+    "kategori": "Desktop",
+    "teknologi": "Java, OOP",
+    "tahun": 2025,
+    "tautan": "https://github.com/"
+  },
+  {
+    "id": "9",
+    "judul": "Simulasi Algoritma A Star",
+    "kategori": "Algoritma",
+    "teknologi": "Java",
+    "tahun": 2025,
+    "tautan": "https://github.com/"
+  },
+  {
+    "id": "10",
+    "judul": "Desain Antarmuka Sistem Informasi Kampus",
+    "kategori": "Desain",
+    "teknologi": "Figma",
+    "tahun": 2026,
+    "tautan": "https://github.com/"
   }
+
 ]
