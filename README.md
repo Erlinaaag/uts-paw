@@ -66,7 +66,7 @@ Kelas: RB
 Tema: Portofolio Proyek
 Deployment: https://Erlinaaag.github.io/uts-paw/
 
-![Tangkapan layar beranda](docs/beranda.png)
+![Tangkapan layar beranda](app/src/assets/Beranda.png)
 
 ## Fitur
 
