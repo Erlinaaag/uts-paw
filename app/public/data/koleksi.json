@@ -79,5 +79,20 @@
     "tahun": 2026,
     "tautan": "https://github.com/"
   }
-
+  ,
+  {
+    "id": "11",
+    "judul": "Sistem Rekomendasi Buku",
+    "kategori": "Data",
+    "teknologi": "Python, Pandas, Machine Learning",
+    "tahun": 2026,
+    "tautan": "https://github.com/"
+  },
+  {
+    "id": "12",
+    "judul": "Aplikasi Kalkulator Berbasis Java",
+    "kategori": "Desktop",
+    "teknologi": "Java, OOP, GUI",
+    "tahun": 2025,
+    "tautan": "https://github.com/"
 ]
