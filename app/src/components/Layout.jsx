@@ -13,7 +13,7 @@ export default function Layout() {
   return (
     <div className="kerangka">
       <header className="kepala" id="kepala">
-        <strong id="judul-website">Portofolio Proyek</strong>
+        <strong id="judul-website">AnakPruyek</strong>
 
         <nav className="menu">
           {MENU.map(({ ke, label }) => (

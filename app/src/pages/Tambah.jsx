@@ -33,14 +33,13 @@ export default function Tambah() {
 
       <label htmlFor="kategori">Kategori</label>
       <select id="kategori" name="kategori" value={form.kategori} onChange={ubah}>
-        <option>Web</option>
-        <option>Game</option>
-        <option>Database</option>
-        <option>Jaringan</option>
-        <option>Data</option>
-        <option>Desktop</option>
-        <option>Algoritma</option>
-        <option>Desain</option>
+        <option></option>
+        <option>Adventure</option>
+        <option>Platformer</option>
+        <option>Puzzle</option>
+        <option>RPG</option>
+        <option>Shooter</option>
+        <option>Racing</option>
       </select>
 
       <label htmlFor="teknologi">Teknologi</label>

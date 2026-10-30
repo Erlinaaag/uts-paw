@@ -58,12 +58,7 @@ Panduan lengkap beserta solusi kendala umum ada di halaman [Panduan](https://uts
 
 Penilaian akhir selalu memakai `grader/` dan `shared/` versi repo induk, jadi mengubahnya di fork tidak berpengaruh.
 
-## README milikmu
-
-Ganti seluruh isi berkas ini dengan dokumentasi aplikasimu (butir rubrik A4). Kerangka berikut boleh dipakai:
-
-```markdown
-# Nama Aplikasi
+# AnakPruyek
 
 Nama: Erlin Agesti Risadi
 NIM: 124140009
@@ -75,7 +70,13 @@ Deployment: https://Erlinaaag.github.io/uts-paw/
 
 ## Fitur
 
-- ...
+Beranda: Menampilkan tema dan ringkasan jumlah proyek.
+Koleksi: Menampilkan, mencari, dan memfilter proyek berdasarkan kategori.
+Tambah: Menambahkan data proyek.
+Statistik: Menampilkan ringkasan data portofolio.
+Tentang: Menampilkan informasi aplikasi.
+Detail Proyek: Menampilkan informasi proyek berdasarkan ID.
+Responsif: Menyesuaikan tampilan pada laptop, tablet, dan HP.
 
 ## Menjalankan secara lokal
 
@@ -85,5 +86,18 @@ npm run dev
 
 ## Konsep React yang dipakai
 
-- ...
-```
+Component: Membagi tampilan menjadi komponen yang dapat digunakan kembali.
+JSX: Menulis struktur antarmuka dalam JavaScript.
+Props: Mengirim data antar-komponen.
+useState: Mengelola state pencarian dan filter.
+useEffect: Menangani efek samping.
+Custom Hook: Memisahkan logika pengelolaan data.
+Context API: Membagikan data antar-komponen.
+Conditional Rendering: Menampilkan tampilan berdasarkan kondisi.
+List Rendering: Menampilkan data menggunakan map().
+React Router: Mengatur navigasi antarhalaman.
+
+## Deployment
+
+Website: https://erlinaaag.github.io/uts-paw/
+Repository: https://github.com/erlinaaag/uts-paw
