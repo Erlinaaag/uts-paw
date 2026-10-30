@@ -87,18 +87,27 @@ Responsif: Menyesuaikan tampilan pada laptop, tablet, dan HP.
 ## Menjalankan secara lokal
 
 cd app
+
 npm install
+
 npm run dev
 
 ## Konsep React yang dipakai
 
 Component: Membagi tampilan menjadi komponen yang dapat digunakan kembali.
+
 JSX: Menulis struktur antarmuka dalam JavaScript.
+
 Props: Mengirim data antar-komponen.
+
 useState: Mengelola state pencarian dan filter.
+
 useEffect: Menangani efek samping.
+
 Custom Hook: Memisahkan logika pengelolaan data.
+
 Context API: Membagikan data antar-komponen.
+
 Conditional Rendering: Menampilkan tampilan berdasarkan kondisi.
 List Rendering: Menampilkan data menggunakan map().
 React Router: Mengatur navigasi antarhalaman.
