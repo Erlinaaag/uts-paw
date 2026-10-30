@@ -1,105 +1,315 @@
- .kerangka {
+
+/* =================================
+   1. WARNA DAN TEMA
+================================= */
+
+:root {
+  --hijau-tua: #006241;
+  --hijau-gelap: #004c38;
+  --hijau-muda: #d4e9e2;
+  --krem: #f7f5ef;
+  --putih: #ffffff;
+  --emas: #cba258;
+  --teks: #1e3932;
+  --abu: #6b7770;
+  --garis: #e5e5df;
+}
+
+/* =================================
+   2. LAYOUT UTAMA
+================================= */
+
+.kerangka {
   display: flex;
   flex-direction: column;
   min-height: 100vh;
+  background-color: var(--krem);
+  color: var(--teks);
+  font-family: Arial, sans-serif;
 }
 
 .kepala {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 1rem 1.5rem;
-}
-
-.menu {
-  display: flex;
-  gap: 1rem;
-}
-
-.menu a.active {
-  font-weight: 600;
+  padding: 1.2rem 3rem;
+  background-color: var(--putih);
+  border-bottom: 1px solid var(--garis);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
 }
 
 .isi {
   flex: 1;
   width: 100%;
-  max-width: 960px;
+  max-width: 1100px;
   margin: 0 auto;
-  padding: 1.5rem;
+  padding: 2.5rem 1.5rem;
 }
 
 .kaki {
-  padding: 1rem 1.5rem;
-  border-top: 1px solid #dcdcdc;
-  color: #57606a;
+  padding: 1.5rem;
+  background-color: var(--hijau-gelap);
+  color: var(--putih);
   font-size: 0.9rem;
+  text-align: center;
 }
 
-.aksi {
+/* =================================
+   3. IDENTITAS WEBSITE
+================================= */
+
+#kepala {
+  position: relative;
+}
+
+#konten-utama {
+  min-height: 60vh;
+}
+
+#kaki {
+  text-align: center;
+}
+
+#judul-website {
+  color: var(--hijau-tua);
+  font-size: 1.4rem;
+  font-weight: 700;
+  letter-spacing: -0.5px;
+}
+
+/* =================================
+   4. NAVIGASI
+================================= */
+
+.menu {
   display: flex;
   align-items: center;
-  gap: 1rem;
-  margin-top: 1rem;
+  gap: 1.8rem;
+}
+
+.menu a {
+  position: relative;
+  color: var(--teks);
+  text-decoration: none;
+  font-size: 0.95rem;
+  font-weight: 600;
+  transition: color 0.2s ease;
+}
+
+.menu a:hover {
+  color: var(--hijau-tua);
+}
+
+.menu a.active {
+  color: var(--hijau-tua);
+  font-weight: 700;
+}
+
+.menu a.active::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -8px;
+  width: 100%;
+  height: 3px;
+  border-radius: 4px;
+  background-color: var(--hijau-tua);
+}
+
+.menu a:focus-visible {
+  outline: 2px solid var(--emas);
+  outline-offset: 5px;
+  border-radius: 3px;
+}
+
+.menu a:active {
+  color: var(--hijau-gelap);
+  transform: scale(0.98);
+}
+
+/* =================================
+   5. KONTEN DAN INFORMASI
+================================= */
+
+.isi h1,
+.isi h2 {
+  color: var(--hijau-gelap);
 }
 
 .isi dl {
   display: grid;
   grid-template-columns: max-content 1fr;
-  gap: 0.25rem 1rem;
+  gap: 0.5rem 1rem;
 }
 
 .isi dt {
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .isi dd {
   margin: 0;
+  color: var(--abu);
 }
+
+.aksi {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+/* =================================
+   6. KARTU PROYEK
+================================= */
 
 .daftar-kartu {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  gap: 1rem;
+  gap: 1.3rem;
 }
 
 .kartu {
-  padding: 1rem;
-  border: 1px solid #dcdcdc;
-  border-radius: 8px;
+  padding: 1.4rem;
+  background-color: var(--putih);
+  border: 1px solid var(--garis);
+  border-radius: 14px;
+  box-shadow: 0 4px 12px rgba(0, 76, 56, 0.05);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.kartu:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 9px 22px rgba(0, 76, 56, 0.12);
 }
 
 .kartu h3 {
-  margin: 0 0 0.25rem;
-  font-size: 1.05rem;
+  margin: 0 0 0.7rem;
+  font-size: 1.1rem;
+}
+
+.kartu h3 a {
+  color: var(--hijau-tua);
+  text-decoration: none;
+}
+
+.kartu h3 a:hover {
+  color: var(--emas);
 }
 
 .kartu p {
   margin: 0;
-  color: #57606a;
+  color: var(--abu);
+  font-size: 0.9rem;
+  line-height: 1.7;
 }
+
+/* =================================
+   7. PENCARIAN DAN FILTER
+================================= */
 
 .alat-koleksi {
   display: flex;
   flex-wrap: wrap;
   gap: 0.75rem;
-  margin-bottom: 1rem;
+  margin-bottom: 1.5rem;
 }
 
 .alat-koleksi input,
 .alat-koleksi select {
-  padding: 0.5rem 0.75rem;
-  border: 1px solid #c4c4c4;
-  border-radius: 6px;
+  padding: 0.8rem 1rem;
+  background-color: var(--putih);
+  border: 1px solid var(--garis);
+  border-radius: 8px;
   font: inherit;
+  color: var(--teks);
 }
 
+.alat-koleksi input:focus,
+.alat-koleksi select:focus {
+  outline: 2px solid var(--hijau-tua);
+  border-color: var(--hijau-tua);
+}
+
+/* =================================
+   8. BADGE KATEGORI
+================================= */
+
+.badge-kategori {
+  display: inline-block;
+  padding: 6px 13px;
+  border-radius: 20px;
+  background-color: var(--hijau-muda);
+  color: var(--hijau-gelap);
+  font-size: 12px;
+  font-weight: 700;
+}
+
+/* =================================
+   9. DAFTAR TEKNOLOGI
+================================= */
+
+.daftar-teknologi {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.badge-teknologi {
+  padding: 6px 10px;
+  border-radius: 6px;
+  background-color: #f1f3ef;
+  color: var(--teks);
+  font-size: 12px;
+}
+
+/* =================================
+   10. RESPONSIVE
+================================= */
+/* RESPONSIVE TABLET DAN HP */
 @media (max-width: 768px) {
   .kepala {
     flex-direction: column;
-    gap: 0.5rem;
+    gap: 1.2rem;
+    padding: 1.2rem;
+  }
+
+  .menu {
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 1rem;
   }
 
   .daftar-kartu {
     grid-template-columns: 1fr;
   }
+
+  .isi {
+    padding: 1.5rem 1rem;
+  }
+
+  .alat-koleksi {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .alat-koleksi input,
+  .alat-koleksi select {
+    width: 100%;
+    box-sizing: border-box;
+  }
+}
+
+/* Membuat konten halaman berada di tengah */
+.beranda {
+  min-height: 60vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 12px;
+  padding: 24px;
+  box-sizing: border-box;
 }

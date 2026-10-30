@@ -7,7 +7,7 @@ export default function Beranda() {
   const jumlahKategori = new Set(items.map((item) => item.kategori)).size
 
   return (
-    <section>
+    <section className="beranda">
       <h1>Portofolio Proyek</h1>
       <p>Tema: {mahasiswa.tema}</p>
       {loading ? (

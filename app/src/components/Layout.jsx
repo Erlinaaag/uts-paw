@@ -12,8 +12,9 @@ const MENU = [
 export default function Layout() {
   return (
     <div className="kerangka">
-      <header className="kepala">
-        <strong>Portofolio Proyek</strong>
+      <header className="kepala" id="kepala">
+        <strong id="judul-website">Portofolio Proyek</strong>
+
         <nav className="menu">
           {MENU.map(({ ke, label }) => (
             <NavLink key={ke} to={ke} end={ke === '/'}>
@@ -22,10 +23,14 @@ export default function Layout() {
           ))}
         </nav>
       </header>
-      <main className="isi">
+
+      <main className="isi" id="konten utama">
         <Outlet />
       </main>
-      <footer className="kaki">Ujian Tengah Semester Pengembangan Aplikasi Web</footer>
+
+      <footer className="kaki" id="kaki">
+        Ujian Tengah Semester Pengembangan Aplikasi Web
+      </footer>
     </div>
   )
 }
