@@ -61,9 +61,13 @@ Penilaian akhir selalu memakai `grader/` dan `shared/` versi repo induk, jadi me
 # AnakPruyek
 
 Nama: Erlin Agesti Risadi
+
 NIM: 124140009
+
 Kelas: RB
+
 Tema: Portofolio Proyek
+
 Deployment: https://Erlinaaag.github.io/uts-paw/
 
 ![Tangkapan layar beranda](app/src/assets/Beranda.png)
