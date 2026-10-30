@@ -30,10 +30,16 @@ export default function Detail() {
       <dl>
         <dt>Kategori</dt>
         <dd>{item.kategori}</dd>
-        <dt>Tenggat</dt>
-        <dd>{item.tenggat}</dd>
-        <dt>Prioritas</dt>
-        <dd>{item.prioritas}</dd>
+        <dt>Teknologi</dt>
+        <dd>{item.teknologi}</dd>
+        <dt>Tahun</dt>
+        <dd>{item.tahun}</dd>
+        <dt>Tautan</dt>
+        <dd>
+          <a href={item.tautan} target="_blank" rel="noopener noreferrer">
+            {item.tautan}
+          </a>
+        </dd>
       </dl>
       <div className="aksi">
         <button type="button" onClick={konfirmasiHapus}>
